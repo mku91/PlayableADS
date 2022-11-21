@@ -17,7 +17,7 @@ export const SIZE = {
     }
 }
 
-// Initialize gsap lib
+// Initialize gsap lib (gsap is powerful utility library for animations. See more https://greensock.com/)
 gsap.registerPlugin(PixiPlugin);
 PixiPlugin.registerPIXI(PIXI);
 
