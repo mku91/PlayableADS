@@ -1,6 +1,6 @@
 # PlayableADS
 
-![Employee data](/PlayableADS/screenshot.jpg?raw=true)
+![img](screenshot.jpg?raw=true)
 
 - Install dependencies: ```npm i``` or ```npm install```
 - Start game: ```npm start```
