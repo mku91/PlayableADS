@@ -25,13 +25,13 @@ document.body.appendChild(App.view);
 document.body.style.margin = '0';
 document.body.style.overflow = 'hidden';
 
-// PLACE OBJECTS
-
 // Background
 const background = PIXI.Sprite.from('assets/background.png');
 background.anchor.set(0.5);
 background.position.set(SIZE.center.x, SIZE.center.y);
 App.stage.addChild(background);
+
+//#region PLACE OBJECTS
 
 // Austin
 const austin = PIXI.Sprite.from('assets/Austin.png');
@@ -157,7 +157,9 @@ gsap.fromTo(plant,
 // Stair
 const stair = new Stair();
 
-// UI
+//#endregion
+
+//#region UI
 
 // Obscure
 const obscure = PIXI.Sprite.from('assets/obscure.png');
@@ -233,6 +235,8 @@ endFrame.anchor.set(0.5);
 endFrame.position.set(SIZE.center.x, 0);
 endFrame.alpha = 0.0;
 App.stage.addChild(endFrame);
+
+//#endregion
 
 export function endGame(){
     gsap.to(obscure,
