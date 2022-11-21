@@ -1,0 +1,19 @@
+{
+  "name": "playableads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mku91/PlayableADS.git"
+  },
+  "author": "A.Zul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mku91/PlayableADS/issues"
+  },
+  "homepage": "https://github.com/mku91/PlayableADS#readme"
+}
