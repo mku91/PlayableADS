@@ -155,7 +155,7 @@ gsap.fromTo(plant,
 );
 
 // Stair
-const stair = new Stair(App);
+const stair = new Stair();
 
 // UI
 
