@@ -15,9 +15,9 @@ export class Button extends PIXI.Container {
         this.position.set(x, y);
         this.addBackground();
         switch(gradeNum){
-            case 0: this.addTexture('assets/stair_grade_0.png'); break;
-            case 1: this.addTexture('assets/stair_grade_1.png'); break;
-            default: this.addTexture('assets/stair_grade_2.png');
+            case 0: this.addIcon('assets/stair_grade_0.png'); break;
+            case 1: this.addIcon('assets/stair_grade_1.png'); break;
+            default: this.addIcon('assets/stair_grade_2.png');
         }
         this.addOkButton();
         this.parent = parent;
@@ -36,7 +36,7 @@ export class Button extends PIXI.Container {
         this.addChild(this.background);
     }
 
-    addTexture(texture){
+    addIcon(texture){
         this.icon = PIXI.Sprite.from(texture);
         this.icon.anchor.set(0.5);
         this.addChild(this.icon);
