@@ -6,7 +6,7 @@ const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     optimization: {
         minimizer: true,
@@ -14,8 +14,9 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, '../dist')
     },
+    target: 'web',
     plugins: [
         new CleanWebpackPlugin(),
         new CopyPlugin({
@@ -31,22 +32,5 @@ module.exports = {
             minify: false,
         }),
         new webpack.ProgressPlugin()
-    ],
-    module: {
-        rules: [
-            {
-                test: /\.ts$/,
-                use: 'ts-loader',
-                exclude: /node_modules/
-            }
-        ]
-    },
-    resolve: {
-        extensions: ['.js']
-    },
-    devServer: {
-        host: 'localhost',
-        port: 8080,
-        open: true
-    }
+    ]
 }
